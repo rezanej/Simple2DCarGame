@@ -128,12 +128,54 @@ CMakeFiles/Simple2DCarGame.dir/enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Simple2DCarGame.dir/enemy.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rezan\CLionProjects\Simple2DCarGame\enemy.cpp -o CMakeFiles\Simple2DCarGame.dir\enemy.cpp.s
 
+CMakeFiles/Simple2DCarGame.dir/road.cpp.obj: CMakeFiles/Simple2DCarGame.dir/flags.make
+CMakeFiles/Simple2DCarGame.dir/road.cpp.obj: ../road.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rezan\CLionProjects\Simple2DCarGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Simple2DCarGame.dir/road.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simple2DCarGame.dir\road.cpp.obj -c C:\Users\rezan\CLionProjects\Simple2DCarGame\road.cpp
+
+CMakeFiles/Simple2DCarGame.dir/road.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Simple2DCarGame.dir/road.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rezan\CLionProjects\Simple2DCarGame\road.cpp > CMakeFiles\Simple2DCarGame.dir\road.cpp.i
+
+CMakeFiles/Simple2DCarGame.dir/road.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Simple2DCarGame.dir/road.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rezan\CLionProjects\Simple2DCarGame\road.cpp -o CMakeFiles\Simple2DCarGame.dir\road.cpp.s
+
+CMakeFiles/Simple2DCarGame.dir/direction.cpp.obj: CMakeFiles/Simple2DCarGame.dir/flags.make
+CMakeFiles/Simple2DCarGame.dir/direction.cpp.obj: ../direction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rezan\CLionProjects\Simple2DCarGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Simple2DCarGame.dir/direction.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simple2DCarGame.dir\direction.cpp.obj -c C:\Users\rezan\CLionProjects\Simple2DCarGame\direction.cpp
+
+CMakeFiles/Simple2DCarGame.dir/direction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Simple2DCarGame.dir/direction.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rezan\CLionProjects\Simple2DCarGame\direction.cpp > CMakeFiles\Simple2DCarGame.dir\direction.cpp.i
+
+CMakeFiles/Simple2DCarGame.dir/direction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Simple2DCarGame.dir/direction.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rezan\CLionProjects\Simple2DCarGame\direction.cpp -o CMakeFiles\Simple2DCarGame.dir\direction.cpp.s
+
+CMakeFiles/Simple2DCarGame.dir/point.cpp.obj: CMakeFiles/Simple2DCarGame.dir/flags.make
+CMakeFiles/Simple2DCarGame.dir/point.cpp.obj: ../point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rezan\CLionProjects\Simple2DCarGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Simple2DCarGame.dir/point.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Simple2DCarGame.dir\point.cpp.obj -c C:\Users\rezan\CLionProjects\Simple2DCarGame\point.cpp
+
+CMakeFiles/Simple2DCarGame.dir/point.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Simple2DCarGame.dir/point.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rezan\CLionProjects\Simple2DCarGame\point.cpp > CMakeFiles\Simple2DCarGame.dir\point.cpp.i
+
+CMakeFiles/Simple2DCarGame.dir/point.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Simple2DCarGame.dir/point.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rezan\CLionProjects\Simple2DCarGame\point.cpp -o CMakeFiles\Simple2DCarGame.dir\point.cpp.s
+
 # Object files for target Simple2DCarGame
 Simple2DCarGame_OBJECTS = \
 "CMakeFiles/Simple2DCarGame.dir/main.cpp.obj" \
 "CMakeFiles/Simple2DCarGame.dir/game.cpp.obj" \
 "CMakeFiles/Simple2DCarGame.dir/car.cpp.obj" \
-"CMakeFiles/Simple2DCarGame.dir/enemy.cpp.obj"
+"CMakeFiles/Simple2DCarGame.dir/enemy.cpp.obj" \
+"CMakeFiles/Simple2DCarGame.dir/road.cpp.obj" \
+"CMakeFiles/Simple2DCarGame.dir/direction.cpp.obj" \
+"CMakeFiles/Simple2DCarGame.dir/point.cpp.obj"
 
 # External object files for target Simple2DCarGame
 Simple2DCarGame_EXTERNAL_OBJECTS =
@@ -142,12 +184,15 @@ Simple2DCarGame.exe: CMakeFiles/Simple2DCarGame.dir/main.cpp.obj
 Simple2DCarGame.exe: CMakeFiles/Simple2DCarGame.dir/game.cpp.obj
 Simple2DCarGame.exe: CMakeFiles/Simple2DCarGame.dir/car.cpp.obj
 Simple2DCarGame.exe: CMakeFiles/Simple2DCarGame.dir/enemy.cpp.obj
+Simple2DCarGame.exe: CMakeFiles/Simple2DCarGame.dir/road.cpp.obj
+Simple2DCarGame.exe: CMakeFiles/Simple2DCarGame.dir/direction.cpp.obj
+Simple2DCarGame.exe: CMakeFiles/Simple2DCarGame.dir/point.cpp.obj
 Simple2DCarGame.exe: CMakeFiles/Simple2DCarGame.dir/build.make
 Simple2DCarGame.exe: ../pdcurses.a
 Simple2DCarGame.exe: CMakeFiles/Simple2DCarGame.dir/linklibs.rsp
 Simple2DCarGame.exe: CMakeFiles/Simple2DCarGame.dir/objects1.rsp
 Simple2DCarGame.exe: CMakeFiles/Simple2DCarGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\rezan\CLionProjects\Simple2DCarGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Simple2DCarGame.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\rezan\CLionProjects\Simple2DCarGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Simple2DCarGame.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Simple2DCarGame.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

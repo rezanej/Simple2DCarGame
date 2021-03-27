@@ -1,9 +1,5 @@
-#include <iostream>
-#include <curses.h>
+#include "game.h"
 int main() {
-    initscr();
-    refresh();
+ Game game;
     getch();
-    endwin();
-
 }

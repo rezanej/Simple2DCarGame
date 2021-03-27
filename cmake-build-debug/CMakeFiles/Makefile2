@@ -93,12 +93,12 @@ clean: CMakeFiles/Simple2DCarGame.dir/clean
 CMakeFiles/Simple2DCarGame.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\rezan\CLionProjects\Simple2DCarGame\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target Simple2DCarGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\rezan\CLionProjects\Simple2DCarGame\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target Simple2DCarGame"
 .PHONY : CMakeFiles/Simple2DCarGame.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Simple2DCarGame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rezan\CLionProjects\Simple2DCarGame\cmake-build-debug\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rezan\CLionProjects\Simple2DCarGame\cmake-build-debug\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Simple2DCarGame.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rezan\CLionProjects\Simple2DCarGame\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Simple2DCarGame.dir/rule

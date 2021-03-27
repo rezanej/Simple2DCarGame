@@ -169,6 +169,33 @@ car.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/car.cpp.s
 .PHONY : car.cpp.s
 
+direction.obj: direction.cpp.obj
+
+.PHONY : direction.obj
+
+# target to build an object file
+direction.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/direction.cpp.obj
+.PHONY : direction.cpp.obj
+
+direction.i: direction.cpp.i
+
+.PHONY : direction.i
+
+# target to preprocess a source file
+direction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/direction.cpp.i
+.PHONY : direction.cpp.i
+
+direction.s: direction.cpp.s
+
+.PHONY : direction.s
+
+# target to generate assembly for a file
+direction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/direction.cpp.s
+.PHONY : direction.cpp.s
+
 enemy.obj: enemy.cpp.obj
 
 .PHONY : enemy.obj
@@ -250,6 +277,60 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+point.obj: point.cpp.obj
+
+.PHONY : point.obj
+
+# target to build an object file
+point.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/point.cpp.obj
+.PHONY : point.cpp.obj
+
+point.i: point.cpp.i
+
+.PHONY : point.i
+
+# target to preprocess a source file
+point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/point.cpp.i
+.PHONY : point.cpp.i
+
+point.s: point.cpp.s
+
+.PHONY : point.s
+
+# target to generate assembly for a file
+point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/point.cpp.s
+.PHONY : point.cpp.s
+
+road.obj: road.cpp.obj
+
+.PHONY : road.obj
+
+# target to build an object file
+road.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/road.cpp.obj
+.PHONY : road.cpp.obj
+
+road.i: road.cpp.i
+
+.PHONY : road.i
+
+# target to preprocess a source file
+road.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/road.cpp.i
+.PHONY : road.cpp.i
+
+road.s: road.cpp.s
+
+.PHONY : road.s
+
+# target to generate assembly for a file
+road.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/road.cpp.s
+.PHONY : road.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -262,6 +343,9 @@ help:
 	@echo ... car.obj
 	@echo ... car.i
 	@echo ... car.s
+	@echo ... direction.obj
+	@echo ... direction.i
+	@echo ... direction.s
 	@echo ... enemy.obj
 	@echo ... enemy.i
 	@echo ... enemy.s
@@ -271,6 +355,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... point.obj
+	@echo ... point.i
+	@echo ... point.s
+	@echo ... road.obj
+	@echo ... road.i
+	@echo ... road.s
 .PHONY : help
 
 

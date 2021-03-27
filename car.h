@@ -8,6 +8,7 @@
 #include <vector>
 #include "direction.h"
 #include "curses.h"
+#include <windows.h>
 class Car {
     std::vector<Point> points
     {
@@ -17,11 +18,9 @@ class Car {
         Point(13,10),Point(13,11),Point(13,12),
     };
 public:
-    Car();
     void move(Direction::directionE);
-    void automove(Direction::directionE);
     void input(WINDOW*);
-    void showCar();
+    void showCar(WINDOW*);
 
 };
 

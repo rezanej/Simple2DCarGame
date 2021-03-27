@@ -86,6 +86,12 @@
 		<Unit filename="C:/Users/rezan/CLionProjects/Simple2DCarGame/car.h">
 			<Option target="Simple2DCarGame"/>
 		</Unit>
+		<Unit filename="C:/Users/rezan/CLionProjects/Simple2DCarGame/direction.cpp">
+			<Option target="Simple2DCarGame"/>
+		</Unit>
+		<Unit filename="C:/Users/rezan/CLionProjects/Simple2DCarGame/direction.h">
+			<Option target="Simple2DCarGame"/>
+		</Unit>
 		<Unit filename="C:/Users/rezan/CLionProjects/Simple2DCarGame/enemy.cpp">
 			<Option target="Simple2DCarGame"/>
 		</Unit>
@@ -99,6 +105,18 @@
 			<Option target="Simple2DCarGame"/>
 		</Unit>
 		<Unit filename="C:/Users/rezan/CLionProjects/Simple2DCarGame/main.cpp">
+			<Option target="Simple2DCarGame"/>
+		</Unit>
+		<Unit filename="C:/Users/rezan/CLionProjects/Simple2DCarGame/point.cpp">
+			<Option target="Simple2DCarGame"/>
+		</Unit>
+		<Unit filename="C:/Users/rezan/CLionProjects/Simple2DCarGame/point.h">
+			<Option target="Simple2DCarGame"/>
+		</Unit>
+		<Unit filename="C:/Users/rezan/CLionProjects/Simple2DCarGame/road.cpp">
+			<Option target="Simple2DCarGame"/>
+		</Unit>
+		<Unit filename="C:/Users/rezan/CLionProjects/Simple2DCarGame/road.h">
 			<Option target="Simple2DCarGame"/>
 		</Unit>
 		<Unit filename="C:/Users/rezan/CLionProjects/Simple2DCarGame/CMakeLists.txt">

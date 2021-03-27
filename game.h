@@ -11,14 +11,19 @@
 class Game {
 public:
     Game();
-    ~Game();
+
 
 private:
     Car car;
-    Road road;
-    std::vector<Enemy> enemies;
+//    Road road;
+//    std::vector<Enemy> enemies;
+    WINDOW* mainWindow;
+    int windowHeight{40},windowWidth{30},windowStartRow{0},windowStartColumn{30};
     void enemyBuilder();
     void roadUpdate();
+    void initScreen();
+    void initWindow();
+    void input();
 
 };
 

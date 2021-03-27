@@ -5,9 +5,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/rezan/CLionProjects/Simple2DCarGame/car.cpp" "C:/Users/rezan/CLionProjects/Simple2DCarGame/cmake-build-debug/CMakeFiles/Simple2DCarGame.dir/car.cpp.obj"
+  "C:/Users/rezan/CLionProjects/Simple2DCarGame/direction.cpp" "C:/Users/rezan/CLionProjects/Simple2DCarGame/cmake-build-debug/CMakeFiles/Simple2DCarGame.dir/direction.cpp.obj"
   "C:/Users/rezan/CLionProjects/Simple2DCarGame/enemy.cpp" "C:/Users/rezan/CLionProjects/Simple2DCarGame/cmake-build-debug/CMakeFiles/Simple2DCarGame.dir/enemy.cpp.obj"
   "C:/Users/rezan/CLionProjects/Simple2DCarGame/game.cpp" "C:/Users/rezan/CLionProjects/Simple2DCarGame/cmake-build-debug/CMakeFiles/Simple2DCarGame.dir/game.cpp.obj"
   "C:/Users/rezan/CLionProjects/Simple2DCarGame/main.cpp" "C:/Users/rezan/CLionProjects/Simple2DCarGame/cmake-build-debug/CMakeFiles/Simple2DCarGame.dir/main.cpp.obj"
+  "C:/Users/rezan/CLionProjects/Simple2DCarGame/point.cpp" "C:/Users/rezan/CLionProjects/Simple2DCarGame/cmake-build-debug/CMakeFiles/Simple2DCarGame.dir/point.cpp.obj"
+  "C:/Users/rezan/CLionProjects/Simple2DCarGame/road.cpp" "C:/Users/rezan/CLionProjects/Simple2DCarGame/cmake-build-debug/CMakeFiles/Simple2DCarGame.dir/road.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
