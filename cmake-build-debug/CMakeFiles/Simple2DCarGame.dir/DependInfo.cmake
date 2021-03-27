@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/rezan/CLionProjects/Simple2DCarGame/main.cpp" "C:/Users/rezan/CLionProjects/Simple2DCarGame/cmake-build-debug/CMakeFiles/Simple2DCarGame.dir/main.cpp.obj"
   "C:/Users/rezan/CLionProjects/Simple2DCarGame/point.cpp" "C:/Users/rezan/CLionProjects/Simple2DCarGame/cmake-build-debug/CMakeFiles/Simple2DCarGame.dir/point.cpp.obj"
   "C:/Users/rezan/CLionProjects/Simple2DCarGame/road.cpp" "C:/Users/rezan/CLionProjects/Simple2DCarGame/cmake-build-debug/CMakeFiles/Simple2DCarGame.dir/road.cpp.obj"
+  "C:/Users/rezan/CLionProjects/Simple2DCarGame/tree.cpp" "C:/Users/rezan/CLionProjects/Simple2DCarGame/cmake-build-debug/CMakeFiles/Simple2DCarGame.dir/tree.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

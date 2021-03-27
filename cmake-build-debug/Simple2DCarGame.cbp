@@ -119,6 +119,12 @@
 		<Unit filename="C:/Users/rezan/CLionProjects/Simple2DCarGame/road.h">
 			<Option target="Simple2DCarGame"/>
 		</Unit>
+		<Unit filename="C:/Users/rezan/CLionProjects/Simple2DCarGame/tree.cpp">
+			<Option target="Simple2DCarGame"/>
+		</Unit>
+		<Unit filename="C:/Users/rezan/CLionProjects/Simple2DCarGame/tree.h">
+			<Option target="Simple2DCarGame"/>
+		</Unit>
 		<Unit filename="C:/Users/rezan/CLionProjects/Simple2DCarGame/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

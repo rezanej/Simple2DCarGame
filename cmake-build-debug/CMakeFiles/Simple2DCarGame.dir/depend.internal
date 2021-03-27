@@ -20,6 +20,7 @@ CMakeFiles/Simple2DCarGame.dir/game.cpp.obj
  C:/Users/rezan/CLionProjects/Simple2DCarGame/game.h
  C:/Users/rezan/CLionProjects/Simple2DCarGame/point.h
  C:/Users/rezan/CLionProjects/Simple2DCarGame/road.h
+ C:/Users/rezan/CLionProjects/Simple2DCarGame/tree.h
 CMakeFiles/Simple2DCarGame.dir/main.cpp.obj
  C:/Users/rezan/CLionProjects/Simple2DCarGame/car.h
  C:/Users/rezan/CLionProjects/Simple2DCarGame/direction.h
@@ -28,9 +29,16 @@ CMakeFiles/Simple2DCarGame.dir/main.cpp.obj
  C:/Users/rezan/CLionProjects/Simple2DCarGame/main.cpp
  C:/Users/rezan/CLionProjects/Simple2DCarGame/point.h
  C:/Users/rezan/CLionProjects/Simple2DCarGame/road.h
+ C:/Users/rezan/CLionProjects/Simple2DCarGame/tree.h
 CMakeFiles/Simple2DCarGame.dir/point.cpp.obj
  C:/Users/rezan/CLionProjects/Simple2DCarGame/point.cpp
  C:/Users/rezan/CLionProjects/Simple2DCarGame/point.h
 CMakeFiles/Simple2DCarGame.dir/road.cpp.obj
+ C:/Users/rezan/CLionProjects/Simple2DCarGame/point.h
  C:/Users/rezan/CLionProjects/Simple2DCarGame/road.cpp
  C:/Users/rezan/CLionProjects/Simple2DCarGame/road.h
+ C:/Users/rezan/CLionProjects/Simple2DCarGame/tree.h
+CMakeFiles/Simple2DCarGame.dir/tree.cpp.obj
+ C:/Users/rezan/CLionProjects/Simple2DCarGame/point.h
+ C:/Users/rezan/CLionProjects/Simple2DCarGame/tree.cpp
+ C:/Users/rezan/CLionProjects/Simple2DCarGame/tree.h

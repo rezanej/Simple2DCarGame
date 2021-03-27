@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Simple2DCarGame.dir/main.cpp.obj"
   "CMakeFiles/Simple2DCarGame.dir/point.cpp.obj"
   "CMakeFiles/Simple2DCarGame.dir/road.cpp.obj"
+  "CMakeFiles/Simple2DCarGame.dir/tree.cpp.obj"
   "Simple2DCarGame.exe"
   "Simple2DCarGame.exe.manifest"
   "Simple2DCarGame.pdb"

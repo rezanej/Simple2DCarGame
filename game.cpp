@@ -10,12 +10,16 @@ Game::Game()
    initWindow();
    wrefresh(mainWindow);
    refresh();
+   road.buildTrees();
+
    while (true)
    {
        wclear(mainWindow);
        box(mainWindow,0,3);
-       car.showCar(mainWindow);
        road.showRoad(mainWindow,windowHeight,windowWidth);
+       car.showCar(mainWindow);
+
+       road.showTrees(mainWindow);
        wrefresh(mainWindow);
        refresh();
        if(car.input(mainWindow)==0)
@@ -33,6 +37,8 @@ void Game::initScreen()
     start_color();
     init_pair(1,COLOR_BLACK,COLOR_YELLOW);
     init_pair(2,COLOR_BLACK,COLOR_RED);
+    init_pair(3,COLOR_GREEN,COLOR_GREEN);
+    init_pair(4,COLOR_WHITE,COLOR_WHITE);
 
 }
 void Game::initWindow()

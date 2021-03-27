@@ -19,6 +19,7 @@ CMakeFiles/Simple2DCarGame.dir/game.cpp.obj: ../game.cpp
 CMakeFiles/Simple2DCarGame.dir/game.cpp.obj: ../game.h
 CMakeFiles/Simple2DCarGame.dir/game.cpp.obj: ../point.h
 CMakeFiles/Simple2DCarGame.dir/game.cpp.obj: ../road.h
+CMakeFiles/Simple2DCarGame.dir/game.cpp.obj: ../tree.h
 
 CMakeFiles/Simple2DCarGame.dir/main.cpp.obj: ../car.h
 CMakeFiles/Simple2DCarGame.dir/main.cpp.obj: ../direction.h
@@ -27,10 +28,17 @@ CMakeFiles/Simple2DCarGame.dir/main.cpp.obj: ../game.h
 CMakeFiles/Simple2DCarGame.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/Simple2DCarGame.dir/main.cpp.obj: ../point.h
 CMakeFiles/Simple2DCarGame.dir/main.cpp.obj: ../road.h
+CMakeFiles/Simple2DCarGame.dir/main.cpp.obj: ../tree.h
 
 CMakeFiles/Simple2DCarGame.dir/point.cpp.obj: ../point.cpp
 CMakeFiles/Simple2DCarGame.dir/point.cpp.obj: ../point.h
 
+CMakeFiles/Simple2DCarGame.dir/road.cpp.obj: ../point.h
 CMakeFiles/Simple2DCarGame.dir/road.cpp.obj: ../road.cpp
 CMakeFiles/Simple2DCarGame.dir/road.cpp.obj: ../road.h
+CMakeFiles/Simple2DCarGame.dir/road.cpp.obj: ../tree.h
+
+CMakeFiles/Simple2DCarGame.dir/tree.cpp.obj: ../point.h
+CMakeFiles/Simple2DCarGame.dir/tree.cpp.obj: ../tree.cpp
+CMakeFiles/Simple2DCarGame.dir/tree.cpp.obj: ../tree.h
 

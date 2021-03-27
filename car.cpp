@@ -70,20 +70,29 @@ void Car::showCar(WINDOW* window)
 {
 
     for (int i = 0; i < points.size(); ++i) {
-        if (i==0 ||i==1 ||i==7||i==8)
+        if (i==0 ||i==1||i==7||i==8)
         {
             wattron(window,COLOR_PAIR(1));
             mvwprintw(window,points[i].getRow(),points[i].getColumn(),"O");
             wattroff(window,COLOR_PAIR(1));
         }
-        else if (i==71 ||i==70 ||i==63||i==64)
+        else if (i==71 ||i==70 ||i==63||i==64||i==69||i==65)
         {
             wattron(window,COLOR_PAIR(2));
             mvwprintw(window,points[i].getRow(),points[i].getColumn(),"O");
             wattroff(window,COLOR_PAIR(2));
-        }
-        else
-        mvwprintw(window,points[i].getRow(),points[i].getColumn(),"#");
+        }else if (i==11 ||i==12 ||i==13||i==14||i==15
+        ||i==24 ||i==20 ||i==21||i==22||i==23||
+        i==56 ||i==60||i==59||i==58||i==57)
+        {
 
+            mvwprintw(window,points[i].getRow(),points[i].getColumn()," ");
+
+        }
+        else {
+            wattron(window,COLOR_PAIR(4));
+            mvwprintw(window, points[i].getRow(), points[i].getColumn(), "#");
+            wattroff(window,COLOR_PAIR(4));
+        }
     }
 }

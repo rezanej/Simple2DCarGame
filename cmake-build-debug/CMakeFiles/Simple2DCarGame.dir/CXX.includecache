@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/rezan/CLionProjects/Simple2DCarGame/point.h
+
 C:/Users/rezan/CLionProjects/Simple2DCarGame/road.cpp
 road.h
 C:/Users/rezan/CLionProjects/Simple2DCarGame/road.h
@@ -13,4 +15,20 @@ C:/Users/rezan/CLionProjects/Simple2DCarGame/road.h
 C:/Users/rezan/CLionProjects/Simple2DCarGame/road.h
 curses.h
 -
+vector
+-
+tree.h
+C:/Users/rezan/CLionProjects/Simple2DCarGame/tree.h
+random
+-
+ctime
+-
+
+C:/Users/rezan/CLionProjects/Simple2DCarGame/tree.h
+vector
+-
+point.h
+C:/Users/rezan/CLionProjects/Simple2DCarGame/point.h
+curses.h
+C:/Users/rezan/CLionProjects/Simple2DCarGame/curses.h
 

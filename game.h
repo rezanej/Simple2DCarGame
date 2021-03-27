@@ -8,6 +8,7 @@
 #include "enemy.h"
 #include "road.h"
 #include <vector>
+#include "tree.h"
 class Game {
 public:
     Game();

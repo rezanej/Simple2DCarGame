@@ -331,6 +331,33 @@ road.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/road.cpp.s
 .PHONY : road.cpp.s
 
+tree.obj: tree.cpp.obj
+
+.PHONY : tree.obj
+
+# target to build an object file
+tree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/tree.cpp.obj
+.PHONY : tree.cpp.obj
+
+tree.i: tree.cpp.i
+
+.PHONY : tree.i
+
+# target to preprocess a source file
+tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/tree.cpp.i
+.PHONY : tree.cpp.i
+
+tree.s: tree.cpp.s
+
+.PHONY : tree.s
+
+# target to generate assembly for a file
+tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Simple2DCarGame.dir\build.make CMakeFiles/Simple2DCarGame.dir/tree.cpp.s
+.PHONY : tree.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -361,6 +388,9 @@ help:
 	@echo ... road.obj
 	@echo ... road.i
 	@echo ... road.s
+	@echo ... tree.obj
+	@echo ... tree.i
+	@echo ... tree.s
 .PHONY : help
 
 
