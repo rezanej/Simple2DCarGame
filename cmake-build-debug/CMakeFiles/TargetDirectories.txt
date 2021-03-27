@@ -1,0 +1,3 @@
+C:/Users/rezan/CLionProjects/Simple2DCarGame/cmake-build-debug/CMakeFiles/Simple2DCarGame.dir
+C:/Users/rezan/CLionProjects/Simple2DCarGame/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/rezan/CLionProjects/Simple2DCarGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Simple2DCarGame.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\Simple2DCarGame.dir/objects.a @CMakeFiles\Simple2DCarGame.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Simple2DCarGame.dir/objects.a -Wl,--no-whole-archive  -o Simple2DCarGame.exe -Wl,--out-implib,libSimple2DCarGame.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Simple2DCarGame.dir\linklibs.rsp
