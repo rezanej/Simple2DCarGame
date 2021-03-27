@@ -15,10 +15,10 @@ public:
 
 private:
     Car car;
-//    Road road;
+    Road road;
 //    std::vector<Enemy> enemies;
     WINDOW* mainWindow;
-    int windowHeight{40},windowWidth{30},windowStartRow{0},windowStartColumn{30};
+    int windowHeight{60},windowWidth{155},windowStartRow{0},windowStartColumn{0};
     void enemyBuilder();
     void roadUpdate();
     void initScreen();

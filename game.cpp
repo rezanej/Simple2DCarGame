@@ -15,12 +15,13 @@ Game::Game()
        wclear(mainWindow);
        box(mainWindow,0,3);
        car.showCar(mainWindow);
+       road.showRoad(mainWindow,windowHeight,windowWidth);
        wrefresh(mainWindow);
        refresh();
-       car.input(mainWindow);
-       if (getch()=='q')
+       if(car.input(mainWindow)==0)
            break;
    }
+   endwin();
 }
 void Game::initScreen()
 {
@@ -29,6 +30,10 @@ void Game::initScreen()
     noecho();
     curs_set(0);
     clear();
+    start_color();
+    init_pair(1,COLOR_BLACK,COLOR_YELLOW);
+    init_pair(2,COLOR_BLACK,COLOR_RED);
+
 }
 void Game::initWindow()
 {
