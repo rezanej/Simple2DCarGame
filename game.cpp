@@ -8,12 +8,13 @@ Game::Game()
 {
    initScreen();
    initWindow();
-   wrefresh(mainWindow);
-   refresh();
+//   wrefresh(mainWindow);
+//   refresh();
    road.buildTrees();
     enemies.push_back(Car(5,40,6));
    while (true)
    {
+       srand(time(0));
        timeChanging();
        wclear(mainWindow);
        box(mainWindow,0,3);
@@ -21,11 +22,11 @@ Game::Game()
        road.showLines(mainWindow);
        car.showCar(mainWindow);
        for(Car s:enemies)
-            s.showCar(mainWindow);
+           s.showCar(mainWindow);
        road.showTrees(mainWindow);
        wrefresh(mainWindow);
        refresh();
-       if(car.input(mainWindow)==0)
+       if(car.input(mainWindow,sleepTime)==0)
            break;
    }
    endwin();
@@ -52,33 +53,42 @@ void Game::initWindow()
     mainWindow=newwin(windowHeight,windowWidth,windowStartRow,windowStartColumn);
     keypad(mainWindow,true);
     box(mainWindow,0,3);
-    refresh();
-    wrefresh(mainWindow);
+//    refresh();
+//    wrefresh(mainWindow);
     nodelay(mainWindow,true);
 
 }
 void Game::timeChanging() {
 
-
-    Sleep(50);
+    enemyBuilder();
+    Sleep(sleepTime);
 
         road.moveLines();
         road.checkLines();
         timeChangeCount++;
         for(int i=0;i<enemies.size();i++)
             enemies[i].move(Direction::directionE::DOWN);
-        wrefresh(mainWindow);
+//        wrefresh(mainWindow);
         if (timeChangeCount == 10) {
             road.buildTrees();
             road.buildLines();
 
             if (enemies[0].getLastPoint().getRow()>60) {
                 enemies.erase(enemies.begin());
-                enemies.push_back(Car(12,40,6));
+
             }
             timeChangeCount = 0;
         }
         road.moveTrees();
         road.checkTree();
+
+}
+void Game::enemyBuilder()  {
+    srand(time(0));
+    int places[]={40, 80,60,100};
+    if (enemies.size()<4)
+    {
+        enemies.push_back(Car(-10,places[randomInt(randomEngine)],randomInt2(randomEngine)));
+    }
 
 }

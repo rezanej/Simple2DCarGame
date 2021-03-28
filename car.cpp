@@ -3,7 +3,7 @@
 //
 
 #include "car.h"
-int Car::input(WINDOW* window)
+int Car::input(WINDOW* window,int &sleepTime)
 {
 
     keypad(window,true);
@@ -14,6 +14,22 @@ int Car::input(WINDOW* window)
     {
         case KEY_LEFT: {
             move(Direction::directionE::LEFT);
+
+            return 1;
+        }
+        case KEY_UP: {
+            if (points[0].getRow()>30)
+            move(Direction::directionE::UP);
+            if (sleepTime>10)
+            sleepTime--;
+
+            return 1;
+        }
+        case KEY_DOWN: {
+            if (points[71].getRow()<=57)
+            move(Direction::directionE::DOWN);
+            if (sleepTime<50)
+            sleepTime++;
 
             return 1;
         }
@@ -35,14 +51,14 @@ void Car::move(Direction::directionE Input) {
 
     switch (Input)
     {
-//        case Direction::directionE ::UP:
-//        {
-//            for (int i = 0; i <points.size() ; ++i) {
-//                points[i].setRow(points[i].getRow()-1);
-//            }
-//
-//            break;
-//        }
+        case Direction::directionE ::UP:
+        {
+            for (int i = 0; i <points.size() ; ++i) {
+                points[i].setRow(points[i].getRow()-1);
+            }
+
+            break;
+        }
         case Direction::directionE::DOWN:
         {
             for (int i = 0; i <points.size() ; ++i) {
