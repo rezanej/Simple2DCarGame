@@ -14,10 +14,10 @@ Game::Game()
     enemies.push_back(Car(5,30,6));
     nodelay(stdscr,false);
     keypad(stdscr ,true);
-    wattron(stdscr,COLOR_PAIR(1));
-    mvwprintw(stdscr,20,30,"PRESS ANY BUTTON TO START");
-    wattroff(stdscr,COLOR_PAIR(1));
-    getch();
+//    wattron(stdscr,COLOR_PAIR(1));
+//    mvwprintw(stdscr,20,30,"PRESS ANY BUTTON TO START");
+//    wattroff(stdscr,COLOR_PAIR(1));
+//    getch();
     nodelay(stdscr,true);
    while (true)
    {
@@ -47,6 +47,8 @@ Game::Game()
            mvwprintw(mainWindow,30,45,"GAME OVER !! PRESS Q for QUIT");
            wrefresh(mainWindow);
            refresh();
+           nodelay(stdscr,false);
+           nodelay(mainWindow,false);
            int a=getch();
            if (a=='q')
 
