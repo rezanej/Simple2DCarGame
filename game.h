@@ -16,13 +16,13 @@ public:
 
 private:
     std::default_random_engine randomEngine{static_cast<unsigned int>(time(0))};
-    std::uniform_int_distribution<unsigned int> randomInt{0,8};
+    std::uniform_int_distribution<unsigned int> randomInt{0,7};
     std::uniform_int_distribution<unsigned int> randomInt2{5,8};
-    Car car=Car(50,37,4);
+    Car car=Car(40,32,4);
     Road road;
     std::vector<Car> enemies;
     WINDOW* mainWindow;
-    int windowHeight{60},windowWidth{154},windowStartRow{0},windowStartColumn{0};
+    int windowHeight{50},windowWidth{120},windowStartRow{0},windowStartColumn{0};
     int timeChangeCount{0};
     int sleepTime=30;
     bool gameover=false;

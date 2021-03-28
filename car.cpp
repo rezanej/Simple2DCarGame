@@ -28,7 +28,7 @@ int Car::input(WINDOW* window,int &sleepTime,bool gameover)
             return 1;
         }
         case KEY_DOWN: {
-            if (points[71].getRow()<=57)
+            if (points[71].getRow()<=47)
             move(Direction::directionE::DOWN);
             if (sleepTime<50) {
                 sleepTime++;
@@ -130,6 +130,6 @@ Point Car::getLeftPoint() {
 }
 void Car::showSpeed(WINDOW * window) {
     wattron(window,COLOR_PAIR(1));
-    mvwprintw(window ,3,32,"SPEED:  %d",speed);
+    mvwprintw(window ,2,4,"SPEED:  %d",speed);
     wattroff(window,COLOR_PAIR(1));
 }

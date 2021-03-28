@@ -8,18 +8,18 @@ void Road::showRoad(WINDOW * window,int height,int width)
 {
     for (int i=0;i<height;i++)
     {
-        mvwprintw(window,i,width-30,"&");
-        mvwprintw(window,i,30,"&");
+        mvwprintw(window,i,width-20,"&");
+        mvwprintw(window,i,20,"&");
     }
 }
 void Road::buildTrees() {
     srand(time(0));
     int count=1;
     for (int i = 0; i < count; ++i) {
-        trees.push_back(Tree(rand()%5-10,1+rand()%25));
+        trees.push_back(Tree(rand()%5-10,1+rand()%20));
     }
     for (int i = 0; i < count; ++i) {
-        trees.push_back(Tree(+rand()%5-10,125+rand()%25));
+        trees.push_back(Tree(+rand()%5-10,100+rand()%20));
     }
 }
 void Road::showTrees(WINDOW * window) {
@@ -36,11 +36,11 @@ void Road ::moveTrees() {
 }
 void Road::checkTree() {
     for (int i = 0; i <trees.size() ; ++i) {
-        if(trees[i].points[10].getRow()>60)
+        if(trees[i].points[10].getRow()>50)
             trees.erase(trees.begin());
     }
 }void Road::buildLines() {
-        lines.push_back(MiddleLine(-4,154/2));
+        lines.push_back(MiddleLine(-4,120/2));
 }
 void Road::showLines(WINDOW * window) {
     for (int i = 0; i < lines.size(); ++i) {
@@ -56,7 +56,7 @@ void Road ::moveLines() {
 }
 void Road::checkLines() {
     for (int i = 0; i <lines.size() ; ++i) {
-        if(lines[i].points[3].getRow()>60)
+        if(lines[i].points[3].getRow()>50)
             lines.erase(lines.begin());
     }
 }

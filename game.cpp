@@ -11,7 +11,14 @@ Game::Game()
 //   wrefresh(mainWindow);
 //   refresh();
    road.buildTrees();
-    enemies.push_back(Car(5,40,6));
+    enemies.push_back(Car(5,30,6));
+    nodelay(stdscr,false);
+    keypad(stdscr ,true);
+    wattron(stdscr,COLOR_PAIR(1));
+    mvwprintw(stdscr,20,30,"PRESS ANY BUTTON TO START");
+    wattroff(stdscr,COLOR_PAIR(1));
+    getch();
+    nodelay(stdscr,true);
    while (true)
    {
        srand(time(0));
@@ -23,11 +30,12 @@ Game::Game()
        road.showRoad(mainWindow,windowHeight,windowWidth);
        road.showLines(mainWindow);
        car.showCar(mainWindow);
-       car.showSpeed(mainWindow);
-       showScore();
+
        for(Car s:enemies)
            s.showCar(mainWindow);
        road.showTrees(mainWindow);
+       car.showSpeed(mainWindow);
+       showScore();
        carAccident();
        wrefresh(mainWindow);
        refresh();
@@ -36,7 +44,7 @@ Game::Game()
                break;
        }
        else{
-           mvwprintw(mainWindow,30,75,"GAME OVER !!");
+           mvwprintw(mainWindow,30,45,"GAME OVER !! PRESS Q for QUIT");
            wrefresh(mainWindow);
            refresh();
            int a=getch();
@@ -49,8 +57,9 @@ Game::Game()
 }
 void Game::initScreen()
 {
+
     initscr();
-    nodelay(stdscr,true);
+
     noecho();
     curs_set(0);
     clear();
@@ -70,6 +79,9 @@ void Game::initWindow()
     mainWindow=newwin(windowHeight,windowWidth,windowStartRow,windowStartColumn);
     keypad(mainWindow,true);
     box(mainWindow,0,3);
+    int y,x;
+    getmaxyx(stdscr,y,x);
+    nodelay(stdscr,true);
 //    refresh();
 //    wrefresh(mainWindow);
     nodelay(mainWindow,true);
@@ -102,7 +114,7 @@ void Game::timeChanging() {
 }
 void Game::enemyBuilder()  {
     srand(time(0));
-    int places[]={30,40,50,60,70,80,90,100,110 };
+    int places[]={20,30,40,50,60,70,80,90 };
     if (enemies.size()<4)
     {
         enemies.push_back(Car(-10,places[randomInt(randomEngine)],randomInt2(randomEngine)));
@@ -119,13 +131,15 @@ void Game::carAccident() {
                 )
             gameover= true;
 
-        if (car.getRightPoint().getColumn()>124 ||car.getLeftPoint().getColumn()<30)
+        if (car.getRightPoint().getColumn()>windowWidth-20 ||car.getLeftPoint().getColumn()<20)
             gameover= true;
     }
 
 }
 void Game::showScore() {
     wattron(mainWindow,COLOR_PAIR(1));
-    mvwprintw(mainWindow ,4,32,"SCORE:  %d",score);
+    mvwprintw(mainWindow ,3,4,"SCORE:  %d",score);
+    mvwprintw(mainWindow ,4,4,"PRESS Q for QUIT");
+
     wattroff(mainWindow,COLOR_PAIR(1));
 }
