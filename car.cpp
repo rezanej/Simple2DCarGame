@@ -3,7 +3,7 @@
 //
 
 #include "car.h"
-int Car::input(WINDOW* window,int &sleepTime)
+int Car::input(WINDOW* window,int &sleepTime,bool gameover)
 {
 
     keypad(window,true);
@@ -13,6 +13,7 @@ int Car::input(WINDOW* window,int &sleepTime)
     switch (Input)
     {
         case KEY_LEFT: {
+
             move(Direction::directionE::LEFT);
 
             return 1;
@@ -20,17 +21,19 @@ int Car::input(WINDOW* window,int &sleepTime)
         case KEY_UP: {
             if (points[0].getRow()>30)
             move(Direction::directionE::UP);
-            if (sleepTime>10)
-            sleepTime--;
-
+            if (sleepTime>10) {
+                sleepTime--;
+                speed+=2;
+            }
             return 1;
         }
         case KEY_DOWN: {
             if (points[71].getRow()<=57)
             move(Direction::directionE::DOWN);
-            if (sleepTime<50)
-            sleepTime++;
-
+            if (sleepTime<50) {
+                sleepTime++;
+                speed-=2;
+            }
             return 1;
         }
         case KEY_RIGHT: {
@@ -124,4 +127,9 @@ Point Car::getRightPoint() {
 }
 Point Car::getLeftPoint() {
     return points[0];
+}
+void Car::showSpeed(WINDOW * window) {
+    wattron(window,COLOR_PAIR(1));
+    mvwprintw(window ,3,32,"SPEED:  %d",speed);
+    wattroff(window,COLOR_PAIR(1));
 }

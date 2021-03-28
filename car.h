@@ -46,8 +46,10 @@ class Car {
     };
 public:
     void move(Direction::directionE);
-    int input(WINDOW*,int&);
+    int input(WINDOW*,int&,bool);
+    int speed=60;
     void showCar(WINDOW*);
+    void showSpeed(WINDOW*);
     Car(int,int,int color);
     Point getLastPoint();
     Point getFirstPoint();

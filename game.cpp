@@ -15,20 +15,35 @@ Game::Game()
    while (true)
    {
        srand(time(0));
+       if (!gameover)
        timeChanging();
        wclear(mainWindow);
        box(mainWindow,0,3);
+
        road.showRoad(mainWindow,windowHeight,windowWidth);
        road.showLines(mainWindow);
        car.showCar(mainWindow);
+       car.showSpeed(mainWindow);
+       showScore();
        for(Car s:enemies)
            s.showCar(mainWindow);
        road.showTrees(mainWindow);
        carAccident();
        wrefresh(mainWindow);
        refresh();
-       if(car.input(mainWindow,sleepTime)==0)
-           break;
+       if (!gameover) {
+           if (car.input(mainWindow, sleepTime, gameover) == 0)
+               break;
+       }
+       else{
+           mvwprintw(mainWindow,30,75,"GAME OVER !!");
+           wrefresh(mainWindow);
+           refresh();
+           int a=getch();
+           if (a=='q')
+
+               break;
+       }
    }
    endwin();
 }
@@ -62,7 +77,6 @@ void Game::initWindow()
 }
 void Game::timeChanging() {
 
-    enemyBuilder();
     Sleep(sleepTime);
 
         road.moveLines();
@@ -74,7 +88,8 @@ void Game::timeChanging() {
         if (timeChangeCount == 10) {
             road.buildTrees();
             road.buildLines();
-
+            enemyBuilder();
+            score++;
             if (enemies[0].getLastPoint().getRow()>60) {
                 enemies.erase(enemies.begin());
 
@@ -87,7 +102,7 @@ void Game::timeChanging() {
 }
 void Game::enemyBuilder()  {
     srand(time(0));
-    int places[]={40, 80,60,100};
+    int places[]={30,40,50,60,70,80,90,100,110 };
     if (enemies.size()<4)
     {
         enemies.push_back(Car(-10,places[randomInt(randomEngine)],randomInt2(randomEngine)));
@@ -102,6 +117,15 @@ void Game::carAccident() {
             || (enemies[i].getRightPoint().getColumn()>=car.getRightPoint().getColumn()
             && enemies[i].getLeftPoint().getColumn()<=car.getRightPoint().getColumn())
                 )
-            sleepTime=200;
+            gameover= true;
+
+        if (car.getRightPoint().getColumn()>124 ||car.getLeftPoint().getColumn()<30)
+            gameover= true;
     }
+
+}
+void Game::showScore() {
+    wattron(mainWindow,COLOR_PAIR(1));
+    mvwprintw(mainWindow ,4,32,"SCORE:  %d",score);
+    wattroff(mainWindow,COLOR_PAIR(1));
 }

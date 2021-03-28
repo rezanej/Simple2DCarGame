@@ -14,10 +14,9 @@ class Game {
 public:
     Game();
 
-
 private:
     std::default_random_engine randomEngine{static_cast<unsigned int>(time(0))};
-    std::uniform_int_distribution<unsigned int> randomInt{0,4};
+    std::uniform_int_distribution<unsigned int> randomInt{0,8};
     std::uniform_int_distribution<unsigned int> randomInt2{5,8};
     Car car=Car(50,37,4);
     Road road;
@@ -26,6 +25,8 @@ private:
     int windowHeight{60},windowWidth{154},windowStartRow{0},windowStartColumn{0};
     int timeChangeCount{0};
     int sleepTime=30;
+    bool gameover=false;
+    int score=0;
     void enemyBuilder();
     void roadUpdate();
     void initScreen();
@@ -34,6 +35,7 @@ private:
     void timeChanging();
     void buildEnemies();
     void carAccident();
+    void showScore();
 };
 
 
