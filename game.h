@@ -15,16 +15,19 @@ public:
 
 
 private:
-    Car car;
+    Car car=Car(50,37,4);
     Road road;
-//    std::vector<Enemy> enemies;
+    std::vector<Car> enemies;
     WINDOW* mainWindow;
-    int windowHeight{60},windowWidth{155},windowStartRow{0},windowStartColumn{0};
+    int windowHeight{60},windowWidth{154},windowStartRow{0},windowStartColumn{0};
+    int timeChangeCount{0};
+    int sleepTime=0;
     void enemyBuilder();
     void roadUpdate();
     void initScreen();
     void initWindow();
     void input();
+    void timeChanging();
 
 };
 

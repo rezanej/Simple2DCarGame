@@ -9,7 +9,7 @@ int Car::input(WINDOW* window)
     keypad(window,true);
     keypad(stdscr,true);
     int Input=getch();
-
+    flushinp();
     switch (Input)
     {
         case KEY_LEFT: {
@@ -43,13 +43,13 @@ void Car::move(Direction::directionE Input) {
 //
 //            break;
 //        }
-//        case Direction::directionE::DOWN:
-//        {
-//            for (int i = 0; i <points.size() ; ++i) {
-//                points[i].setRow(points[i].getRow()+1);
-//            }
-//            break;
-//        }
+        case Direction::directionE::DOWN:
+        {
+            for (int i = 0; i <points.size() ; ++i) {
+                points[i].setRow(points[i].getRow()+1);
+            }
+            break;
+        }
         case Direction::directionE::LEFT:
         {
             for (int i = 0; i <points.size() ; ++i) {
@@ -90,9 +90,13 @@ void Car::showCar(WINDOW* window)
 
         }
         else {
-            wattron(window,COLOR_PAIR(4));
+            wattron(window,COLOR_PAIR(color));
             mvwprintw(window, points[i].getRow(), points[i].getColumn(), "#");
-            wattroff(window,COLOR_PAIR(4));
+            wattroff(window,COLOR_PAIR(color));
         }
     }
+}
+Car::Car(int y, int x ,int color) :x{x},y{y},color{color}{}
+Point Car::getLastPoint() {
+    return points[71];
 }

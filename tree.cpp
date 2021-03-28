@@ -9,8 +9,12 @@ void Tree::showTree(WINDOW * window) {
         mvwprintw(window,points[i].getRow(),points[i].getColumn(),"*");
         wattroff(window,COLOR_PAIR(3));
 
+
     }
 }
 Tree::Tree(int row,int column):y{row},x{column} {
+
+}
+Tree::~Tree() {
 
 }

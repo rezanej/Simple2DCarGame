@@ -6,11 +6,39 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/rezan/CLionProjects/Simple2DCarGame/car.h
+point.h
 C:/Users/rezan/CLionProjects/Simple2DCarGame/point.h
+vector
+-
+direction.h
+C:/Users/rezan/CLionProjects/Simple2DCarGame/direction.h
+curses.h
+C:/Users/rezan/CLionProjects/Simple2DCarGame/curses.h
+windows.h
+-
 
-C:/Users/rezan/CLionProjects/Simple2DCarGame/road.cpp
+C:/Users/rezan/CLionProjects/Simple2DCarGame/direction.h
+
+C:/Users/rezan/CLionProjects/Simple2DCarGame/enemy.h
+
+C:/Users/rezan/CLionProjects/Simple2DCarGame/game.cpp
+game.h
+C:/Users/rezan/CLionProjects/Simple2DCarGame/game.h
+
+C:/Users/rezan/CLionProjects/Simple2DCarGame/game.h
+car.h
+C:/Users/rezan/CLionProjects/Simple2DCarGame/car.h
+enemy.h
+C:/Users/rezan/CLionProjects/Simple2DCarGame/enemy.h
 road.h
 C:/Users/rezan/CLionProjects/Simple2DCarGame/road.h
+vector
+-
+tree.h
+C:/Users/rezan/CLionProjects/Simple2DCarGame/tree.h
+
+C:/Users/rezan/CLionProjects/Simple2DCarGame/point.h
 
 C:/Users/rezan/CLionProjects/Simple2DCarGame/road.h
 curses.h

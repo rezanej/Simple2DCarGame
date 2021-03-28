@@ -10,6 +10,7 @@
 class Tree
 {
     int y,x;
+public:
     std::vector<Point> points{
 
         Point(y+1,x-1),Point(y+1,x),Point(y+1,x+1)
@@ -19,6 +20,7 @@ class Tree
     };
 public:
     Tree(int,int);
+    ~Tree();
     void showTree(WINDOW*);
 };
 

@@ -10,7 +10,7 @@
 #include "curses.h"
 #include <windows.h>
 class Car {
-    int x=37,y=50;
+    int x=37,y=50,color;
     std::vector<Point> points
     {
         Point(y,x),Point(y,x+1),Point(y,x+2),Point(y,x+3),Point(y,x+4),Point(y,x+5),
@@ -48,7 +48,8 @@ public:
     void move(Direction::directionE);
     int input(WINDOW*);
     void showCar(WINDOW*);
-
+    Car(int,int,int color);
+    Point getLastPoint();
 };
 
 
