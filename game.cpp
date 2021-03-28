@@ -24,6 +24,7 @@ Game::Game()
        for(Car s:enemies)
            s.showCar(mainWindow);
        road.showTrees(mainWindow);
+       carAccident();
        wrefresh(mainWindow);
        refresh();
        if(car.input(mainWindow,sleepTime)==0)
@@ -46,6 +47,7 @@ void Game::initScreen()
     init_pair(5,COLOR_BLUE,COLOR_BLUE);
     init_pair(6,COLOR_GREEN,COLOR_GREEN);
     init_pair(7,COLOR_CYAN,COLOR_CYAN);
+    init_pair(8,COLOR_WHITE,COLOR_BLACK);
 
 }
 void Game::initWindow()
@@ -91,4 +93,15 @@ void Game::enemyBuilder()  {
         enemies.push_back(Car(-10,places[randomInt(randomEngine)],randomInt2(randomEngine)));
     }
 
+}
+void Game::carAccident() {
+    for (int i = 0; i <enemies.size() ; ++i) {
+        if (enemies[i].getLastPoint().getRow()==car.getFirstPoint().getRow())
+            if ((enemies[i].getLeftPoint().getColumn()<=car.getLeftPoint().getColumn() &&
+            enemies[i].getRightPoint().getColumn()>=car.getLeftPoint().getColumn())
+            || (enemies[i].getRightPoint().getColumn()>=car.getRightPoint().getColumn()
+            && enemies[i].getLeftPoint().getColumn()<=car.getRightPoint().getColumn())
+                )
+            sleepTime=200;
+    }
 }

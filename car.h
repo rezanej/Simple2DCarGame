@@ -50,6 +50,9 @@ public:
     void showCar(WINDOW*);
     Car(int,int,int color);
     Point getLastPoint();
+    Point getFirstPoint();
+    Point getRightPoint();
+    Point getLeftPoint();
 };
 
 

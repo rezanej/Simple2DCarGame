@@ -33,6 +33,7 @@ private:
     void input();
     void timeChanging();
     void buildEnemies();
+    void carAccident();
 };
 
 

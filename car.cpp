@@ -116,3 +116,12 @@ Car::Car(int y, int x ,int color) :x{x},y{y},color{color}{}
 Point Car::getLastPoint() {
     return points[71];
 }
+Point Car::getFirstPoint() {
+    return points[0];
+}
+Point Car::getRightPoint() {
+    return points[8];
+}
+Point Car::getLeftPoint() {
+    return points[0];
+}
